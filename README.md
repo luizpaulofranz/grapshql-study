@@ -1,1 +1,0 @@
-# grapshql-study
