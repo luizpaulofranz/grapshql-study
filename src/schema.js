@@ -2,8 +2,12 @@ const { gql } = require('apollo-server');
 
 const typeDefs = gql`
   type Query {
-    getAvailableVersions(currentVersion: String): [AvailableVersion]
-    getFakeAvailableVersions: AvailableVersion
+    getAvailableVersions(currentVersion: String): AvailableVersionList
+    getFakeAvailableVersions: AvailableVersionList
+  }
+
+  type AvailableVersionList{
+    availableVersionList: [AvailableVersion]
   }
 
   type AvailableVersion{
@@ -14,8 +18,8 @@ const typeDefs = gql`
   type VersionInfo{
     minVersion: String
     hash: String
-    fixedBugs: FixedBugs
-    newFeatures: NewFeatures
+    fixedBugs: [FixedBugs]
+    newFeatures: [NewFeatures]
   }
 
   type FixedBugs{
