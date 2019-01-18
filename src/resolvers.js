@@ -1,10 +1,10 @@
-const objTest = require('./fake-objects');
+const fakeObject = require('./fake-objects');
 
-console.log(JSON.stringify(objTest.FakeAvailableVersionList));
+//console.log(JSON.stringify(fakeObject));
 
 module.exports = {
   Query: {
-    getFakeAvailableVersions: () => objTest.FakeAvailableVersionList
+    getFakeAvailableVersions: () => fakeObject
   }
 
 };
