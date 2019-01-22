@@ -2,7 +2,6 @@ const { gql } = require('apollo-server');
 
 const typeDefs = gql`
   type Query {
-    getAvailableVersions(currentVersionSysmoS1: String): AvailableVersionList
     getFakeAvailableVersions: AvailableVersionList
   }
 
