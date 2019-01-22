@@ -70,6 +70,8 @@ const FakeAvailableVersion2 =
 
 const FakeAvailableVersionList =
 {
+  "modulePath": "Administrador",
+  "moduleName": "Sievo-BETA",
   "availableVersionList":  [
     FakeAvailableVersion1,
     FakeAvailableVersion2
